@@ -1,0 +1,175 @@
+/* --------- Body --------- */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+	font-size:18px;
+	color: #2D3748;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50px 4fr 1fr 50px;
+    grid-gap: 100px;
+    grid-template-areas:
+    "header header header header"
+    "nav content aside none"
+    "footer footer footer footer";
+}
+
+/* --------- Header --------- */
+
+header {
+	grid-area: header;
+	background-color: #63B3ED;
+	text-align: center;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	flex-direction: column;
+	padding: 20px;
+}
+
+header > h1 {
+	font-size: 36px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.self-image > img {
+    border-radius: 50%; 
+    width: 150px;
+    height: 150px;
+}
+
+/* --------- Main --------- */
+
+main {
+	grid-area: content;
+}
+
+
+.post-header > h2 {
+	font-size: 32px;
+	color: #48BB78;
+}
+
+/* --------- Aside --------- */
+
+aside {
+	grid-area: aside;
+}
+
+aside > section > h3 {
+	font-family: Georgia,'Times New Roman', Times, serif;
+	color: #48BB78;
+}
+
+aside > .about {
+	background-color: #E2E8F0;
+	padding: 20px;
+}
+
+aside > .about > h3 {
+	color: #000000;
+}
+
+aside > section > ul > li > a {
+	color: #4299E1;
+}
+
+/* --------- Footer --------- */
+
+footer {
+	grid-area: footer;
+	background-color: #2C5282;
+	color: #FFFFFF;
+	padding-left: 150px;
+}
+
+
+/* --------- General Styles --------- */
+
+ul {
+	padding: 0px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.image-fluid {
+	width: 150px;
+	height: 150px;
+}
+
+.meta-text {
+	margin-top: 10px;
+	color: #718096;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+.text-muted {
+	color: #343434;
+}
+
+.pt-2 {
+	padding-top: 20px;
+}
+
+.pb-2 {
+	padding-bottom: 20px;
+}
+
+.pl-2 {
+	padding-left: 20px;
+}
+
+
+.pr-2 {
+	padding-right: 20px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mb-0 {
+	margin-bottom: 0px;
+}
+
+.mt-0 {
+	margin-top: 0px;
+}
+
+.image-wrap-left {
+	float: left;
+	margin: 20px;
+}
+
+.image-wrap-right {
+	float: right;
+	margin: 20px;
+}
+
+.clear-fix {
+	overflow: auto;
+}
+
+
+
+
+/* --------- Media Queries --------- */
+
+@media only screen and (max-width: 768px) {
+	.image-fluid {
+		max-width: 100%;
+		height: auto;
+	}
+}
